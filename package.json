@@ -1,0 +1,15 @@
+{
+  "name": "coffee_project",
+  "version": "1.0.0",
+  "description": "a E-Commerce based project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "React"
+  ],
+  "author": "Sriram N Kulkarni",
+  "license": "ISC"
+}
