@@ -1,18 +1,9 @@
 import dotenv from "dotenv";
-import { connectDB, sequelize } from "./db.js";
+import connectDB from "./db/db.js"; // Ensure the file extension is included
+
 
 dotenv.config({
-  path: "./.env",
-});
+    path : './env'
+})
 
-connectDB();
-
-// Sync models with database (if needed)
-(async () => {
-  try {
-    await sequelize.sync({ alter: true }); // Auto-update table structure
-    console.log("All models are synchronized with the database.");
-  } catch (error) {
-    console.error("Error syncing models:", error);
-  }
-})();
+connectDB() 
